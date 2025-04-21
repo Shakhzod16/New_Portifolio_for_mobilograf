@@ -11,57 +11,67 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 	</head>
 	<body>
-		<nav>
-			<div class="nav-box">
-				<div class="logo">
-					<img src="logo.png" alt="DJUNA logotip" style="height: 40px" />
-				</div>
+	<nav>
+  <div class="nav-box">
+    <div class="logo">
+      <img src="logo.png" alt="DJUNA logotip" style="height: 40px" />
+    </div>
 
-				<div class="nav-container">
-					<div class="links">
-						<a href="#Home" class="link">Home</a>
-						<a href="#skills" class="link">Skills</a>
-						<!-- <a href="#intro" class="link">Introduction</a> -->
-						<a href="#services" class="link">Services</a>
-						<a href="#contact" class="link">Contact</a>
-					</div>
+    <div class="nav-container">
+      <div class="links">
+        <a href="#Home" class="link">Home</a>
+        <a href="#skills" class="link">Skills</a>
+        <!-- <a href="#intro" class="link">Introduction</a> -->
+        <a href="#services" class="link">Services</a>
+        <a href="#contact" class="link">Contact</a>
+      </div>
 
-					<button id="hire-me" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
-						<i class="fa-solid fa-paper-plane"></i> Contact Us
-					</button>
+      <button id="hire-me" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+        <i class="fa-solid fa-paper-plane"></i> Contact Us
+      </button>
 
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="hamburg"
-						height="32"
-						width="34"
-						viewBox="0 0 448 512"
-						onclick="hamburg()">
-						<path
-							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-					</svg>
-				</div>
-			</div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="hamburg"
+        height="32"
+        width="34"
+        viewBox="0 0 448 512"
+        onclick="hamburg()">
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+      </svg>
+    </div>
+  </div>
 
-			<div class="dropdown" id="dropdown">
-				<a href="#Home" class="link">Home</a>
-				<a href="#skills" class="link">Skills</a>
-				<!-- <a href="#intro" class="link">Introduction</a> -->
-				<a href="#services" class="link">Services</a>
-				<a href="#contact" class="link">Contact</a>
+  <div class="dropdown" id="dropdown">
+    <a href="#Home" class="link">Home</a>
+    <a href="#skills" class="link">Skills</a>
+    <!-- <a href="#intro" class="link">Introduction</a> -->
+    <a href="#services" class="link">Services</a>
+    <a href="#contact" class="link">Contact</a>
 
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					class="cancel"
-					height="36"
-					width="32"
-					viewBox="0 0 384 512"
-					onclick="cancel()">
-					<path
-						d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
-				</svg>
-			</div>
-		</nav>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="cancel"
+      height="36"
+      width="32"
+      viewBox="0 0 384 512"
+      onclick="cancel()">
+      <path
+        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+    </svg>
+  </div>
+</nav>
+
+<script>
+  function hamburg() {
+    document.getElementById('dropdown').classList.add('active');
+  }
+
+  function cancel() {
+    document.getElementById('dropdown').classList.remove('active');
+  }
+</script>
 
 		<section>
 			<div class="content" id="Home">
@@ -202,7 +212,15 @@
 </section>
 
 
+<script>
+	// 🖱 Link bosilganda menyuni yopish
+document.querySelectorAll('.dropdown .link').forEach(link => {
+  link.addEventListener('click', () => {
+    cancel(); // menyuni yopadi
+  });
+});
 
+</script>
 		<script>
 			function hamburg() {
 				document.getElementById('dropdown').classList.add('active');
